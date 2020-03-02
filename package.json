@@ -1,7 +1,7 @@
 {
-  "name": "react-typescript-boilerplate",
+  "name": "coaching-site",
   "version": "1.0.0",
-  "description": "A boilerplate app",
+  "description": "",
   "main": "index.tsx",
   "scripts": {
     "bundle": "webpack",
