@@ -8,13 +8,18 @@ const Title = styled.h1`
   color: palevioletred;
 `;
 
+const Wrapper = styled.section`
+  padding: 4em;
+  background: papayawhip;
+`;
+
 class App extends React.PureComponent {
 
   render() {
     return (
-      <div>
+      <Wrapper>
           <Title>Montashery Coaching</Title>
-          
+
         Allison is passionate about helping people to find freedom, joy, and hope.
 
         She specialises in coaching individuals who are exploring the themes of gender, sexuality, or spirituality.
@@ -31,7 +36,7 @@ class App extends React.PureComponent {
         Email
         Phone Number
         Message
-      </div>
+      </Wrapper>
     );
   }
 }
