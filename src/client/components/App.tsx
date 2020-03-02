@@ -1,33 +1,26 @@
 import React from 'react';
-import { server } from '../../config';
-
-const fetch = require('node-fetch');
-
-type User = {
-  username: string;
-};
 
 class App extends React.PureComponent {
-  state = { username: null };
-
-  componentDidMount() {
-    fetch(`${server}/api/getUsername`)
-      .then((res: Response) => res.json())
-      .then((user: User) => this.setState({ username: user.username }));
-  }
-  //  .catch(function(err) {
-  //    console.log('Fetch Error :-S', err);
-  //  });
 
   render() {
-    const { username } = this.state;
     return (
       <div>
-        {username ? (
-          <h1>{`Hello ${username}`}</h1>
-        ) : (
-          <h1>Loading... please wait!</h1>
-        )}
+        Allison is passionate about helping people to find freedom, joy, and hope.
+
+        She specialises in coaching individuals who are exploring the themes of gender, sexuality, or spirituality.
+
+        She especially enjoys coaching people through explorations of their relationships with gender, sexuality, and spirituality. (can change the wording if you want)
+
+        As your coach, Allison is committed to journeying alongside you as you discover what brings you freedom, where you can find joyfulness, and what steps you can take toward a more hope-filled future.
+
+        Get in touch now to learn more about working with Allison!
+
+        Contact form:
+        First Name
+        Last Name
+        Email
+        Phone Number
+        Message
       </div>
     );
   }
