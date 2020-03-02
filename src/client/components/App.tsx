@@ -1,10 +1,20 @@
 import React from 'react';
+import styled from 'styled-components'
+
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
 
 class App extends React.PureComponent {
 
   render() {
     return (
       <div>
+          <Title>Montashery Coaching</Title>
+          
         Allison is passionate about helping people to find freedom, joy, and hope.
 
         She specialises in coaching individuals who are exploring the themes of gender, sexuality, or spirituality.
