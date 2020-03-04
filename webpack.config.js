@@ -40,10 +40,34 @@ module.exports = {
             },
 
             // css-loader to bundle all the css files into one file and style-loader to add all the styles inside the style tag of the document
+        // *** REMOVE THIS?? ***
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
-            }
+            },
+            {
+                test: /\.(png|jp(e*)g|svg)$/,
+                use: [{
+                    loader: 'url-loader',
+                    options: {
+                        limit: 8000, // Convert images < 8kb to base64 strings
+                        name: 'images/[hash]-[name].[ext]'
+                    }
+                }]
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2|otf)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            limit: 10000,
+                            mimetype: 'application/font-woff',
+                        },
+                    },
+                ],
+            },
         ]
     },
     plugins: [
