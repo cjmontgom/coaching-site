@@ -9,7 +9,7 @@ export const Wrapper = styled.section`
 `;
 
 export const HeaderWrapper = styled.div`
-position: relative;
+  position: relative;
   width: 100%;
   margin-top: 76px;
   text-align: center;
@@ -28,7 +28,7 @@ export const Header = styled.div`
 
   position: absolute;
   left: 50%;
-  margin-left: -5.5em; 
+  margin-left: -5.5em;
   top: -50px;
 `;
 export const HeaderColourBlock = styled.div`
@@ -47,6 +47,14 @@ export const SubHeader = styled.div`
   color: ${theme.colours.seventiesDarkBrown};
 `;
 
+export const PageBreakImageWrapper = styled.div`
+  display: flex;
+`;
+
+export const PageBreakImage = styled.img`
+  max-width: 400px;
+`;
+
 export const Body = styled.div`
   font-family: ${theme.bodyFont.family};
   font-weight: ${theme.fontWeightLight};
@@ -56,6 +64,11 @@ export const Body = styled.div`
 
 export const Section = styled.div`
   margin: 100px auto 100px auto;
+  max-width: 500px;
+`;
+
+export const StrongSection = styled.div`
+  margin: 0 auto;
   max-width: 500px;
 `;
 

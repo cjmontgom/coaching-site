@@ -8,11 +8,13 @@ import {
   HeaderColourBlock,
   HeaderWrapper,
   Logo,
-  Section,
+  PageBreakImage, PageBreakImageWrapper,
+  Section, StrongSection,
   SubHeader,
   Wrapper
 } from "./App.styles";
 import logo from "../images/logo.png";
+import abstractFace from "../images/abstractFace.png";
 
 class App extends React.PureComponent {
   render() {
@@ -29,12 +31,15 @@ class App extends React.PureComponent {
             for (ipiusefh ifuhnsdf jhnsfsdf hsdfn sd uhsndnfhas udfnkjhsfa ygh
             sfhfgh fsuyhdfsbnfsh vsgydf bdsjhfguyhsd bsdhf uysdbuhdhdsl uh ).
           </Section>
-          <Section>
+          <PageBreakImageWrapper>
+            <PageBreakImage src={abstractFace} alt="image of a face" />
+          </PageBreakImageWrapper>
+          <StrongSection>
             <strong>
               She specialises is coaching individuals who are exploring themes
               of gender, sexuality or spirituality.
             </strong>
-          </Section>
+          </StrongSection>
           <Section>
             As your coach, Allison is committed to journeying alongside you as
             you discover what brings freedom and joy to your life.
