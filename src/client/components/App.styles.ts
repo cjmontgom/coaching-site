@@ -9,6 +9,7 @@ export const Wrapper = styled.section`
 `;
 
 export const HeaderWrapper = styled.div`
+position: relative;
   width: 100%;
   margin-top: 76px;
   text-align: center;
@@ -27,8 +28,8 @@ export const Header = styled.div`
 
   position: absolute;
   left: 50%;
-  margin-left: -346px;
-  top: 268px;
+  margin-left: -5.5em; 
+  top: -50px;
 `;
 export const HeaderColourBlock = styled.div`
   width: 100%;

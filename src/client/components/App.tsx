@@ -50,7 +50,6 @@ class App extends React.PureComponent {
           </Section>
           <FormWrapper>
             <SubHeader>GET IN TOUCH</SubHeader>
-
             <FormSection>
               Contact form: First Name Last Name Email Phone Number Message
             </FormSection>
