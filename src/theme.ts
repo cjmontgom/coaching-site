@@ -1,6 +1,5 @@
-import "typeface-abril-fatface";
+import "typeface-montserrat";
 import "typeface-quicksand";
-import "typeface-fjalla-one"
 
 type HexCode = string;
 
@@ -8,27 +7,31 @@ export interface Theme {
   headerFont: {
     family: string;
     size: string;
+    weight: string;
   };
   subHeaderFont: {
     family: string;
     size: string;
-  }
+  };
   bodyFont: {
     family: string;
+    size: string;
   };
   fontWeightBold: string;
   fontWeightMedium: string;
   fontWeightLight: string;
   colours: {
-    primaryNeutral: HexCode;
-    secondaryNeutral: HexCode;
-    seventiesDarkBrown: HexCode;
-    seventiesGreen: HexCode;
-    seventiesOrange: HexCode;
-    seventiesPink: HexCode;
-    seventiesYellow: HexCode;
-    seventiesYellowSecondary: HexCode;
+    neutral: HexCode;
+    yellow: HexCode;
+    pink: HexCode;
+    orange: HexCode;
+    green: HexCode;
   };
+  sizes: {
+    desktop: {
+      columnWidth: string
+    }
+  }
   borderRadius: string;
   boxShadow: {
     smallHover: string;
@@ -38,32 +41,36 @@ export interface Theme {
 
 const theme: Theme = {
   headerFont: {
-    family: "Abril Fatface",
-    size: "4em"
+    family: "Montserrat",
+    size: "3.4em",
+    weight: "610"
   },
   subHeaderFont: {
-    family: "Fjalla One",
+    family: "Montserrat",
     size: "1.5em"
   },
   bodyFont: {
-    family: "Quicksand"
+    family: "Quicksand",
+    size: "1.3em"
   },
   fontWeightBold: "500",
   fontWeightMedium: "400",
   fontWeightLight: "300",
   colours: {
-    primaryNeutral: "#f7f5eb",
-    secondaryNeutral: "#EEE0D3",
-    seventiesDarkBrown: "#3F362A",
-    seventiesGreen: "#6A7031",
-    seventiesOrange: "#FC632B",
-    seventiesPink: "#FF6265",
-    seventiesYellow: "#F8BF3A",
-    seventiesYellowSecondary: "#F0B978"
+    neutral: "#FFF5DA",
+    yellow: "#F8BF3A",
+    pink: "#FF6264",
+    orange: "#FC612B",
+    green: "#6A7031"
+  },
+  sizes: {
+    desktop: {
+      columnWidth: "740px"
+    }
   },
   borderRadius: "8px",
   boxShadow: {
-    smallHover: "0px 6px 15px rgba(0, 0, 0, 0.1)",
+    smallHover: "0px 6px 15px rgba(0, 0, 0, 0.1)"
   },
   easing: "cubic-bezier(0.165, 0.84, 0.44, 1)"
 };

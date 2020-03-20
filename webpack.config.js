@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 
     // webpack will take the files from ./src/client/index
-    entry: './src/client/index',
+    entry: './src/index',
 
     // and output it into /dist as bundle.js
     output: {
@@ -72,7 +72,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/client/index.html'
+            template: './src/index.html'
         })
     ]
 };
