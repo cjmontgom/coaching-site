@@ -1,5 +1,3 @@
-- make colour band position absolute and sort that again
-- make WELCOME align with body underneath
 
 - add @media rules to avoid header moving left on phone screen
 - have all widths as percentages which go up as screen size goes down

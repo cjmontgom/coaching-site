@@ -12,7 +12,8 @@ import {
   ReviewWrapper,
   Section,
   SubHeader,
-  WelcomeSection, WelcomeText,
+  WelcomeSection,
+  WelcomeText,
   Wrapper
 } from "./App.styles";
 import logo from "./images/logo.png";
@@ -28,16 +29,14 @@ class App extends React.PureComponent {
         <Logo src={logo} alt="logo" />
 
         <HeaderWrapper>
-          <Header>
-            MONTASHERY COACHING
-          </Header>
+          <Header>MONTASHERY COACHING</Header>
           <HeaderColourBlock />
         </HeaderWrapper>
 
         <WelcomeSection>
           <WelcomeText>
             <SubHeader>WELCOME</SubHeader>
-            <Body>
+            <Body welcomeText={true}>
               Allison Tash Montgomery <br />
               (aka Montashery) is a coach passionate about helping people find
               freedom, joy and hope!
@@ -65,7 +64,7 @@ class App extends React.PureComponent {
         <Section>
           <SubHeader>WORKING WITH ALLISON</SubHeader>
           <Body>
-            Allison offers both in-person coaching sessions located in
+            Allison offers both in-person coaching sessions in
             Spitalfields, London and online via phone or zoom. International
             clients are very much welcome.
             <br />
@@ -75,25 +74,23 @@ class App extends React.PureComponent {
         </Section>
 
         <ReviewWrapper>
+          <ReviewQuotation src={quotationLeft} alt="Quotation marks." />
           <ReviewText>
-            <ReviewQuotation src={quotationLeft} alt="Quotation marks." />
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I get so much out of my sessions with Allison! She instantly puts me
-            at ease and creates a safe space to speak freely and work through
-            whatever is on my mind. In our sessions I have been exploring
-            spirituality and faith, as well as navigating the confusion involved
-            in accepting my sexuality. God and being gay are both pretty big
-            topics, but Allison has a unique ability to listen and respond with
-            guidance and thought provoking insights. This is really helping me
-            to find the answers and clarity I am searching for. Having Allison
-            as my life coach is giving me so much comfort and I always leave
-            with a lighter heart and a lifted spirit.
+            Allison instantly puts me at ease and creates a safe space to speak
+            freely and work through whatever is on my mind. In our sessions I
+            have been exploring spirituality and faith, as well as navigating
+            the confusion involved in accepting my sexuality. Allison has a
+            unique ability to listen and respond with guidance and thought
+            provoking insights. This is really helping me to find the clarity I
+            am searching for and I always leave with a lighter heart and a
+            lifted spirit.
             <br />
-            <ReviewQuotation
-              endQuote={true}
-              src={quotationRight}
-              alt="Quotation marks."
-            />
           </ReviewText>
+          <ReviewQuotation
+            endQuote={true}
+            src={quotationRight}
+            alt="Quotation marks."
+          />
         </ReviewWrapper>
 
         <Section>

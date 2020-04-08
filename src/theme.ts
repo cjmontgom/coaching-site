@@ -30,6 +30,7 @@ export interface Theme {
   sizes: {
     desktop: {
       columnWidth: string
+      marginTop: string
     }
   }
   borderRadius: string;
@@ -65,7 +66,8 @@ const theme: Theme = {
   },
   sizes: {
     desktop: {
-      columnWidth: "740px"
+      columnWidth: "740px",
+      marginTop: "140px"
     }
   },
   borderRadius: "8px",
