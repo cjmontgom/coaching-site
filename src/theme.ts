@@ -12,11 +12,18 @@ export interface Theme {
   subHeaderFont: {
     family: string;
     size: string;
+    letterSpacing: string;
   };
   bodyFont: {
     family: string;
     size: string;
+    lineHeight: string;
   };
+  formInputFont: {
+    family: string;
+    size: string;
+  },
+  fontWeightReallyBold: string,
   fontWeightBold: string;
   fontWeightMedium: string;
   fontWeightLight: string;
@@ -48,12 +55,19 @@ const theme: Theme = {
   },
   subHeaderFont: {
     family: "Montserrat",
-    size: "1.5em"
+    size: "1.5em",
+    letterSpacing: "0.3em"
   },
   bodyFont: {
     family: "Quicksand",
-    size: "1.3em"
+    size: "1.3em",
+    lineHeight: "1.4"
   },
+  formInputFont: {
+    family: "Quicksand",
+    size: "1.1em"
+  },
+  fontWeightReallyBold: "600",
   fontWeightBold: "500",
   fontWeightMedium: "400",
   fontWeightLight: "300",

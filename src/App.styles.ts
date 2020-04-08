@@ -1,6 +1,14 @@
 import styled from "styled-components";
 import theme from "./theme";
 
+interface BodyProps {
+  welcomeText?: boolean;
+}
+
+interface QuotationProps {
+  endQuote?: boolean;
+}
+
 export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
@@ -34,7 +42,7 @@ export const HeaderColourBlock = styled.div`
   position: relative;
   margin-top: -30px;
   width: 100%;
-  height: ${theme.sizes.desktop.marginTop};;
+  height: ${theme.sizes.desktop.marginTop};
   background: ${theme.colours.yellow};
 `;
 
@@ -42,79 +50,75 @@ export const Section = styled.div`
   margin-top: ${theme.sizes.desktop.marginTop};
   max-width: ${theme.sizes.desktop.columnWidth};
   text-align: center;
-  line-height: 1.4;
-`;
 
-export const WelcomeSection = styled(Section)`
-  display: flex;
-  text-align: right;
-`;
-
-export const WelcomeText = styled.div``;
-
-export const Image = styled.img`
-  max-width: 400px;
-  padding: 0 20px;
+  line-height: ${theme.bodyFont.lineHeight};
 `;
 
 export const SubHeader = styled.div`
   font-family: ${theme.subHeaderFont.family};
   font-size: ${theme.subHeaderFont.size};
   font-weight: ${theme.fontWeightBold};
-  color: black;
-  letter-spacing: 0.3em;
+  letter-spacing: ${theme.subHeaderFont.letterSpacing};
 `;
 
-interface BodyProps {
-  welcomeText?: boolean;
-}
-
 export const Body = styled.div<BodyProps>`
+  margin-top: 12px; 
+  ${props => (props.welcomeText ? "margin-right: 9px;" : "")}
+  
   font-family: ${theme.bodyFont.family};
-  font-weight: ${theme.fontWeightLight};
   font-size: ${theme.bodyFont.size};
-  margin: ${props => (props.welcomeText ? "12px 9px 2px 0;" : "12px 0 2px 0;")};
+  font-weight: ${theme.fontWeightLight};
+`;
+
+export const WelcomeSection = styled(Section)`
+  display: flex;
+`;
+
+export const WelcomeText = styled.div`
+  text-align: right;
+`;
+
+export const Image = styled.img`
+  margin: 0 20px 0 20px;
+  max-width: 400px;
+  box-shadow: 12px 10px 22px -5px #ccc;
 `;
 
 export const ReviewWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  max-width: 1060px;
   margin-top: ${theme.sizes.desktop.marginTop};
+  max-width: 1060px;
 `;
 
-interface QuotationProps {
-  endQuote?: boolean;
-}
-
 export const ReviewQuotation = styled.img<QuotationProps>`
-  max-width: 50px;
-  max-height: 50px;
-
   ${props =>
     props.endQuote ? "align-self: flex-end;" : "align-self: flex-start;"}
+  max-width: 50px;
+  max-height: 50px;
 `;
 
 export const ReviewText = styled.div`
-  text-align: center;
+  margin: 26px;
+  
   font-family: ${theme.bodyFont.family};
-  font-weight: ${theme.fontWeightBold};
   font-size: ${theme.bodyFont.size};
+  font-weight: ${theme.fontWeightBold};
   font-style: italic;
   color: ${theme.colours.orange};
-  margin: 26px;
+  text-align: center;
   line-height: 1.4;
 `;
 
 export const FormWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: ${theme.sizes.desktop.marginTop} 0 200px 0;
+  margin: ${theme.sizes.desktop.marginTop} 0 160px 0;
   padding: 50px;
   width: 50%;
+  align-items: center;
   background: ${theme.colours.yellow};
   border-radius: ${theme.borderRadius};
-  align-items: center;
 
   &:hover {
     box-shadow: ${theme.boxShadow.smallHover};
@@ -122,60 +126,56 @@ export const FormWrapper = styled.div`
   }
 `;
 
-export const FormSection = styled.form`
+export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-
-  font-family: inherit;
-  margin: 20px auto 0 auto;
+  margin-top: 20px;
   width: 70%;
 `;
 
 export const TextInput = styled.input`
-  background: white;
+  margin-top: 4px;
+  padding-left: 8px;
   width: 100%;
   height: 40px;
-  border-radius: 10px;
   border: none;
-  padding: 0 0 0 8px;
+  border-radius: 10px;
 
-  font-family: ${theme.bodyFont.family};
+  font-family: ${theme.formInputFont.family};
+  font-size: ${theme.formInputFont.size};
   font-weight: ${theme.fontWeightLight};
-  font-size: 1.1em;
 `;
 
 export const TextArea = styled.textarea`
-  background: white;
+  margin-top: 4px;
+  padding-left: 8px;
   width: 100%;
   height: 100px;
-  border-radius: 10px;
   border: none;
-  padding: 0 0 0 8px;
+  border-radius: 10px;
   resize: none;
 
-  font-family: ${theme.bodyFont.family};
+  font-family: ${theme.formInputFont.family};
+  font-size: ${theme.formInputFont.size};
   font-weight: ${theme.fontWeightLight};
-  font-size: 1.1em;
 `;
 
 export const Button = styled.button`
-  font-family: ${theme.bodyFont.family};
-  font-weight: 600;
-  font-size: 1.5em;
-  color: black;
-  text-align: center;
   align-self: center;
-
   margin: 30px 0 0 0;
   padding: 10px;
-  background: white;
   width: 100px;
-  border-radius: 300px;
   border: none;
+  border-radius: 25px;
+  box-shadow: 8px 8px 16px -12px;
 
+  font-family: ${theme.bodyFont.family};
+  font-weight: ${theme.fontWeightReallyBold};
+  font-size: 1.5em;
+  color: black;
+  
   &:hover {
     background: ${theme.colours.orange};
     color: white;
-    transition: background color 0.2s ease-in-out;
   }
 `;

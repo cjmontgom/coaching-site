@@ -4,14 +4,10 @@
 
 - deploy site 
 
-make spaces between header nbsp so they dont go down to next line alon
-e
-
-
 - try shadow under photo?
 - make form responsive cto small screen
 
+sort Thanks! message in form submission
 sort error messages in form submission 
-add placeholder to telephone input for country code
 
 

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
-import {Body, Button, FormSection, TextArea, TextInput} from "./App.styles";
+import {Body, Button, StyledForm, TextArea, TextInput} from "./App.styles";
 
 function Form() {
   const [serverState, setServerState] = useState({
@@ -33,7 +33,7 @@ function Form() {
       });
   };
   return (
-    <FormSection onSubmit={handleOnSubmit}>
+    <StyledForm onSubmit={handleOnSubmit}>
       <Body>Name</Body>
       <TextInput name="name" required />
 
@@ -57,7 +57,7 @@ function Form() {
           {serverState.status.msg}
         </p>
       )}
-    </FormSection>
+    </StyledForm>
   );
 }
 

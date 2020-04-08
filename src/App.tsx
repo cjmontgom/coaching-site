@@ -104,7 +104,6 @@ class App extends React.PureComponent {
 
         <FormWrapper>
           <SubHeader>GET IN TOUCH</SubHeader>
-
           <Form />
         </FormWrapper>
       </Wrapper>
