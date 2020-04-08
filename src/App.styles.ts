@@ -4,8 +4,8 @@ import theme from "./theme";
 export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: center;
   background: white;
+  align-items: center;
 `;
 
 export const HeaderWrapper = styled.div`
@@ -25,13 +25,7 @@ export const Header = styled.div`
   font-size: ${theme.headerFont.size};
   font-weight: ${theme.headerFont.weight};
   color: ${theme.colours.orange};
-  letter-spacing: 0.05em;
-  text-align: center;
-
-  position: absolute;
-  left: 36%;
-  margin-left: -5.5em;
-  top: -36px;
+  letter-spacing: 0.5em;
 `;
 
 export const HeaderColourBlock = styled.div`
@@ -52,6 +46,10 @@ export const WelcomeSection = styled(Section)`
   text-align: right;
 `;
 
+export const WelcomeText = styled.div`
+
+`
+
 export const Image = styled.img`
   max-width: 400px;
   padding: 0 20px;
@@ -62,34 +60,53 @@ export const SubHeader = styled.div`
   font-size: ${theme.subHeaderFont.size};
   font-weight: ${theme.fontWeightBold};
   color: black;
+  letter-spacing: 0.3em;
 `;
 
-export const NormalTextBlock = styled.div`
+export const Body = styled.div`
   font-family: ${theme.bodyFont.family};
   font-weight: ${theme.fontWeightLight};
   font-size: ${theme.bodyFont.size};
+  margin: 12px 0 2px 0;
 `;
 
-export const Span = styled.span`
-  padding-left: 1em;
-`;
-
-export const PageBreakImageWrapper = styled.div`
-  display: flex;
+export const ReviewWrapper = styled.div`
+  display: block;
   width: 800px;
+  margin: 160px 0 0 0;
 `;
 
-export const PageBreakImage = styled.img`
-  max-width: 400px;
+interface QuotationProps {
+  endQuote?: boolean;
+}
+
+export const ReviewQuotation = styled.img<QuotationProps>`
+  max-width: 50px;
+  position: absolute;
+
+  ${props =>
+    props.endQuote ? " padding: 180px 0px 0 762px;" : "margin: -22px 0 0 0;"}
+`;
+
+export const ReviewText = styled.div`
+  flex-direction: column;
+  display: flex;
+  font-family: ${theme.bodyFont.family};
+  font-weight: ${theme.fontWeightBold};
+  font-size: ${theme.bodyFont.size};
+  font-style: italic;
+  color: ${theme.colours.orange};
 `;
 
 export const FormWrapper = styled.div`
-  display: inline-block;
-  margin: 0 auto 200px auto;
+  display: flex;
+  flex-direction: column;
+  margin: 160px auto 200px auto;
   padding: 50px;
-  max-width: ${theme.sizes.desktop.columnWidth};
+  width: 50%;
   background: ${theme.colours.yellow};
   border-radius: ${theme.borderRadius};
+  align-items: center;
 
   &:hover {
     box-shadow: ${theme.boxShadow.smallHover};
@@ -98,33 +115,58 @@ export const FormWrapper = styled.div`
 `;
 
 export const FormSection = styled.form`
+  display: flex;
+  flex-direction: column;
+
   font-family: inherit;
-  margin: 20px auto 20px auto;
-  max-width: 500px;
+  margin: 20px auto 0 auto;
+  width: 70%;
 `;
 
-export const FormInput = styled.input`
+export const TextInput = styled.input`
   background: white;
   width: 100%;
   height: 40px;
-  border-radius: 300px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 0 0 8px;
+
+  font-family: ${theme.bodyFont.family};
+  font-weight: ${theme.fontWeightLight};
+  font-size: 1.1em;
 `;
 
-export const Button = styled.div`
+export const TextArea = styled.textarea`
+  background: white;
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 0 0 8px;
+  resize: none;
+
+  font-family: ${theme.bodyFont.family};
+  font-weight: ${theme.fontWeightLight};
+  font-size: 1.1em;
+`;
+
+export const Button = styled.button`
   font-family: ${theme.bodyFont.family};
   font-weight: 600;
   font-size: 1.5em;
   color: black;
   text-align: center;
+  align-self: center;
 
-  margin: auto;
+  margin: 30px 0 0 0;
   padding: 10px;
   background: white;
-  max-width: 100px;
+  width: 100px;
   border-radius: 300px;
+  border: none;
 
   &:hover {
-    background: ${theme.colours.pink};
+    background: ${theme.colours.orange};
     color: white;
     transition: background color 0.2s ease-in-out;
   }

@@ -1,24 +1,24 @@
 import React from "react";
 import {
-  FormSection,
+  Body,
   FormWrapper,
   Header,
   HeaderColourBlock,
   HeaderWrapper,
   Image,
   Logo,
-  NormalTextBlock,
-  PageBreakImage,
-  PageBreakImageWrapper,
+  ReviewQuotation,
+  ReviewText,
+  ReviewWrapper,
   Section,
-  Span,
   SubHeader,
-  WelcomeSection,
+  WelcomeSection, WelcomeText,
   Wrapper
 } from "./App.styles";
 import logo from "./images/logo.png";
-import abstractFace from "./images/abstractFace.png";
 import allison from "./images/allison.png";
+import quotationLeft from "./images/quotationLeft.png";
+import quotationRight from "./images/quotationRight.png";
 import Form from "./Form";
 
 class App extends React.PureComponent {
@@ -29,20 +29,20 @@ class App extends React.PureComponent {
 
         <HeaderWrapper>
           <Header>
-            M O N T A S H E R Y<Span>C O A C H I N G</Span>
+            MONTASHERY COACHING
           </Header>
           <HeaderColourBlock />
         </HeaderWrapper>
 
         <WelcomeSection>
-          <div>
-            <SubHeader>W E L C O M E</SubHeader>
-            <NormalTextBlock>
+          <WelcomeText>
+            <SubHeader>WELCOME</SubHeader>
+            <Body>
               Allison Tash Montgomery <br />
               (aka Montashery) is a coach passionate about helping people find
               freedom, joy and hope!
-            </NormalTextBlock>
-          </div>
+            </Body>
+          </WelcomeText>
           <Image
             src={allison}
             alt="A photo of Allison sitting on a green chair."
@@ -50,8 +50,8 @@ class App extends React.PureComponent {
         </WelcomeSection>
 
         <Section>
-          <SubHeader>A B O U T</SubHeader>
-          <NormalTextBlock>
+          <SubHeader>ABOUT</SubHeader>
+          <Body>
             Allison specialises in coaching individuals and groups exploring
             themes around <strong>gender, sexuality & spirituality</strong>.
             Drawing on both her personal story (being a queer woman of faith)
@@ -59,52 +59,56 @@ class App extends React.PureComponent {
             Theology and a Masters degree in Gender Studies) she is committed to
             journeying alongside people as they discover more of who they are
             and how they can step into a more hope-filled future.
-          </NormalTextBlock>
+          </Body>
         </Section>
 
         <Section>
-          <SubHeader>
-            W O R K I N G<Span>W I T H</Span>
-            <Span>A L L I S O N</Span>
-          </SubHeader>
-          <NormalTextBlock>
+          <SubHeader>WORKING WITH ALLISON</SubHeader>
+          <Body>
             Allison offers both in-person coaching sessions located in
-            Spitalfields, London and online via phone or skype. International
+            Spitalfields, London and online via phone or zoom. International
             clients are very much welcome.
-            <br />
             <br />
             Pricing operates on a sliding scale based on what the client can
             afford.
-          </NormalTextBlock>
+          </Body>
         </Section>
 
+        <ReviewWrapper>
+          <ReviewText>
+            <ReviewQuotation src={quotationLeft} alt="Quotation marks." />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I get so much out of my sessions with Allison! She instantly puts me
+            at ease and creates a safe space to speak freely and work through
+            whatever is on my mind. In our sessions I have been exploring
+            spirituality and faith, as well as navigating the confusion involved
+            in accepting my sexuality. God and being gay are both pretty big
+            topics, but Allison has a unique ability to listen and respond with
+            guidance and thought provoking insights. This is really helping me
+            to find the answers and clarity I am searching for. Having Allison
+            as my life coach is giving me so much comfort and I always leave
+            with a lighter heart and a lifted spirit.
+            <br />
+            <ReviewQuotation
+              endQuote={true}
+              src={quotationRight}
+              alt="Quotation marks."
+            />
+          </ReviewText>
+        </ReviewWrapper>
+
         <Section>
-          <SubHeader>
-            N E X T<Span>S T E P S</Span>
-          </SubHeader>
-          <NormalTextBlock>
+          <SubHeader>NEXT STEPS</SubHeader>
+          <Body>
             Interested in exploring working with Allison? Pop your details below
             and we can schedule a 30 minute discovery chat to see if working
             together might be right for you.
-          </NormalTextBlock>
+          </Body>
         </Section>
 
-        <PageBreakImageWrapper>
-          <PageBreakImage
-            src={abstractFace}
-            alt="A line drawing of a woman's face"
-          />
-        </PageBreakImageWrapper>
-
         <FormWrapper>
-          <SubHeader>
-            G E T<Span>I N</Span>
-            <Span>T O U C H</Span>
-          </SubHeader>
+          <SubHeader>GET IN TOUCH</SubHeader>
 
-          <FormSection>
-            <Form />
-          </FormSection>
+          <Form />
         </FormWrapper>
       </Wrapper>
     );

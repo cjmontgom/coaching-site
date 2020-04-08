@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import axios from "axios";
+import {Body, Button, FormSection, TextArea, TextInput} from "./App.styles";
 
 function Form() {
   const [serverState, setServerState] = useState({
@@ -32,23 +33,31 @@ function Form() {
       });
   };
   return (
-    <div>
-      <h1>Contact Us</h1>
-      <form onSubmit={handleOnSubmit}>
-        <label htmlFor="email">Email:</label>
-        <input id="email" type="email" name="email" required />
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
-        <button type="submit" disabled={serverState.submitting}>
-          Submit
-        </button>
-        {serverState.status && (
-          <p className={!serverState.status.ok ? "errorMsg" : ""}>
-            {serverState.status.msg}
-          </p>
-        )}
-      </form>
-    </div>
+    <FormSection onSubmit={handleOnSubmit}>
+      <Body>Name</Body>
+      <TextInput name="name" required />
+
+      <Body>Email</Body>
+      <TextInput type="email" name="email" required />
+
+      <Body>Phone number (including country code)</Body>
+      <TextInput
+        name="phone"
+        required
+      />
+
+      <Body>Message</Body>
+      <TextArea name="message" required></TextArea>
+
+      <Button type="submit" disabled={serverState.submitting}>
+        Send
+      </Button>
+      {serverState.status && (
+        <p className={!serverState.status.ok ? "errorMsg" : ""}>
+          {serverState.status.msg}
+        </p>
+      )}
+    </FormSection>
   );
 }
 
