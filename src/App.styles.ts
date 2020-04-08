@@ -192,6 +192,7 @@ export const FormWrapper = styled.div`
 
   @media only screen and (max-width: ${DeviceSizes.laptop}) {
     margin: 6em 0 2em 0;
+    padding: 10%;
     width: 70%;
   }
 `;
@@ -218,6 +219,11 @@ export const TextInput = styled.input`
   font-family: ${theme.formInputFont.family};
   font-size: ${theme.formInputFont.size};
   font-weight: ${theme.fontWeightLight};
+  
+  @media only screen and (max-width: ${DeviceSizes.ipad}) {
+    height: 1.6em;
+    font-size: 1em;
+  }
 `;
 
 export const TextArea = styled.textarea`
@@ -232,6 +238,11 @@ export const TextArea = styled.textarea`
   font-family: ${theme.formInputFont.family};
   font-size: ${theme.formInputFont.size};
   font-weight: ${theme.fontWeightLight};
+  
+  @media only screen and (max-width: ${DeviceSizes.ipad}) {
+    height: 3.6em;
+    font-size: 1em;
+  }
 `;
 
 export const Button = styled.button`
@@ -253,30 +264,8 @@ export const Button = styled.button`
     background: ${theme.colours.orange};
     color: white;
   }
+  
+  @media only screen and (max-width: ${DeviceSizes.ipad}) {
+    font-size: 1em;
+  }
 `;
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-/* Large devices (laptops/desktops, 992px and up) */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-/* Extra EXTRA large devices (large desktops, 1800px and up) */
-
-// @media only screen and (max-width: 600px) {
-//   font-size: 14px;
-// }
-// @media only screen and (min-width: 768px) {
-//   font-size: 30px;
-// }
-// @media only screen and (min-width: 992px) {
-//   font-size: 40px;
-// }
-// @media only screen and (min-width: 1200px) {
-//   font-size: 52px;
-// }
-// @media only screen and (min-width: 1800px) {
-//   font-size: 64px;
-// }

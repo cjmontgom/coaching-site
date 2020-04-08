@@ -51,22 +51,23 @@ class App extends React.PureComponent {
         <Section>
           <SubHeader>ABOUT</SubHeader>
           <Body>
-            Allison specialises in coaching individuals and groups exploring
-            themes around <strong>gender, sexuality & spirituality</strong>.
-            Drawing on both her personal story (being a queer woman of faith)
-            and her educational background (she has a Bachelors degree in
-            Theology and a Masters degree in Gender Studies) she is committed to
-            journeying alongside people as they discover more of who they are
-            and how they can step into a more hope-filled future.
+            As a coach, Allison is committed to journeying alongside people as
+            they discover more of who they are and how they can step into a more
+            hope-filled future. She specialises in coaching individuals and
+            groups exploring themes around{" "}
+            <strong>gender, sexuality & spirituality</strong>, drawing on both
+            her personal story (being a queer woman of faith) and her
+            educational background (she holds a Bachelors degree in Theology and
+            a Masters degree in Gender Studies).
           </Body>
         </Section>
 
         <Section>
           <SubHeader>WORKING WITH ALLISON</SubHeader>
           <Body>
-            Allison offers both in-person coaching sessions in
-            Spitalfields, London and online via phone or zoom. International
-            clients are very much welcome.
+            Allison offers both in-person coaching sessions in Spitalfields,
+            London and online via phone or zoom. International clients are very
+            much welcome.
             <br />
             Pricing operates on a sliding scale based on what the client can
             afford.
@@ -97,8 +98,8 @@ class App extends React.PureComponent {
           <SubHeader>NEXT STEPS</SubHeader>
           <Body>
             Interested in exploring working with Allison? Pop your details below
-            and we can schedule a 30 minute discovery chat to see if working
-            together might be right for you.
+            and she will be in touch to schedule a 30 minute discovery chat to
+            see if working together might be right for you.
           </Body>
         </Section>
 
