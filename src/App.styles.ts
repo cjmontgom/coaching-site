@@ -29,7 +29,7 @@ export const Wrapper = styled.div`
 
 export const HeaderWrapper = styled.div`
   position: relative;
-  margin-top: 90px;
+  margin-top: 60px;
   width: 100%;
   text-align: center;
 
@@ -134,6 +134,7 @@ export const WelcomeText = styled.div`
 export const Image = styled.img`
   margin: 0 20px 0 20px;
   max-width: 400px;
+  max-height: 600px;
   box-shadow: 12px 10px 22px -5px #ccc;
 
   @media only screen and (max-width: ${DeviceSizes.ipad}) {
