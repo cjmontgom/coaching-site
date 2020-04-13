@@ -1,5 +1,7 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const path = require('path');
+import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 
     // webpack will take the files from ./src/client/index
