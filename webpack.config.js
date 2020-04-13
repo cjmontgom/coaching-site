@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 
-    // webpack will take the files from ./src/client/index
+    // webpack will take the files from ./src/index.tsx
     entry: './src/index.tsx',
 
     // and output it into /dist as bundle.js
