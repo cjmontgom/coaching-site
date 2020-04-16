@@ -7,16 +7,20 @@ module.exports = {
 
     // and output it into /dist as bundle.js
     output: {
-        path: __dirname,
-        publicPath: '/',
+        path: path.join(__dirname, '/dist'),
         filename: 'bundle.js'
     },
 
     // specify localhost port to listen on (this is not required, webpack-dev-server will run portfinder)
-    devServer: {
-        port: 9000,
-        open: true
-    },
+    // proxy is for when you have a separate API backend development server and we want to send API requests on the same domain.
+    // In our case, we have a Node.js/Express backend where we want to send the API requests to.
+    // devServer: {
+    //     port: 9000,
+    //     open: true,
+    //     proxy: {
+    //         "/api": "http://localhost:8000"
+    //     }
+    // },
 
     // adding .ts and .tsx to resolve.extensions will help babel look for .ts and .tsx files to transpile
     resolve: {
@@ -64,6 +68,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            template: './src/index.html',
+            filename: "./index.html",
             favicon: "./src/favicon.png"
         })
     ]

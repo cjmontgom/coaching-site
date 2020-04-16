@@ -2,16 +2,13 @@
   "name": "coaching-site",
   "version": "1.0.0",
   "description": "",
-  "main": "index.tsx",
   "scripts": {
-    "bundle": "webpack",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "dev": "webpack-dev-server --mode development --open --hot ",
+    "start": "node server.ts",
+    "dev": "webpack --mode development --open --hot && node server.ts",
     "build": "webpack --mode production",
     "check-types": "tsc",
-    "start": "node server.ts",
-    "heroku-postbuild": "webpack -p"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "type": "module",
   "author": "Chloe",

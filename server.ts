@@ -1,14 +1,30 @@
 const express = require('express');
 const path = require('path');
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8000;
 const app = express();
 
-// the __dirname is the current directory from where the script is running
-app.use(express.static(__dirname));
+const DIST_DIR = path.join(__dirname, '/dist');
+const HTML_FILE = path.join(DIST_DIR, 'index.html');
 
-// extra check to redirect the users back to index.html to avoid ‘not found’ errors and for the sake of simplicity
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'index.html'));
+const mockResponse = {
+    foo: 'bar',
+    bar: 'foo'
+};
+
+app.use(express.static(DIST_DIR));
+
+// a route to test the server is running properly
+app.get('/api', (req, res) => {
+    res.send(mockResponse);
 });
 
-app.listen(port);
+app.get('*', (req, res) => {
+    res.sendFile(HTML_FILE);
+});
+
+app.listen(port, function () {
+    console.log('App listening on port: ' + port);
+});
+
+
+
