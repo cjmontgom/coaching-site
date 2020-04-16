@@ -7,7 +7,8 @@ module.exports = {
 
     // and output it into /dist as bundle.js
     output: {
-        path: path.join(__dirname, '/dist'),
+        path: __dirname,
+        publicPath: '/',
         filename: 'bundle.js'
     },
 
@@ -24,8 +25,7 @@ module.exports = {
 
     module: {
         rules: [
-
-            // we use babel-loader to load our jsx and tsx files
+            //let webpack know that .js and .jsx files need to go through Babel before being bundled.
             {
                 test: /\.(ts|js)x?$/,
                 exclude: /node_modules/,
@@ -33,9 +33,6 @@ module.exports = {
                     loader: 'babel-loader'
                 },
             },
-
-            // css-loader to bundle all the css files into one file and style-loader to add all the styles inside the style tag of the document
-        // *** REMOVE THIS?? ***
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
@@ -67,7 +64,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            favicon: "./src/favicon.png"
         })
     ]
 };

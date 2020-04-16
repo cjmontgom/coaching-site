@@ -1,4 +1,4 @@
-import "typeface-montserrat";
+import "typeface-montserrat-latin-200";
 import "typeface-quicksand";
 
 type HexCode = string;
