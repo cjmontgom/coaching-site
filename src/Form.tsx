@@ -1,21 +1,24 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import axios from "axios";
-import {Body, Button, StyledForm, TextArea, TextInput} from "./App.styles";
+import { Body, Button, StyledForm, TextArea, TextInput } from "./App.styles";
+
+// add types
 
 function Form() {
+
   const [serverState, setServerState] = useState({
     submitting: false,
     status: null
   });
+
   const handleServerResponse = (ok, msg, form) => {
     setServerState({
       submitting: false,
       status: { ok, msg }
     });
-    if (ok) {
-      form.reset();
-    }
+    ok ? form.reset() : console.log(msg);
   };
+
   const handleOnSubmit = e => {
     e.preventDefault();
     const form = e.target;
@@ -26,12 +29,13 @@ function Form() {
       data: new FormData(form)
     })
       .then(r => {
-        handleServerResponse(true, "Thanks!", form);
+        handleServerResponse(true, "Success! Your message has been sent.", form);
       })
       .catch(r => {
         handleServerResponse(false, r.response.data.error, form);
       });
   };
+
   return (
     <StyledForm onSubmit={handleOnSubmit}>
       <Body>Name</Body>
@@ -41,10 +45,7 @@ function Form() {
       <TextInput type="email" name="email" required />
 
       <Body>Phone number (including country code)</Body>
-      <TextInput
-        name="phone"
-        required
-      />
+      <TextInput name="phone" required />
 
       <Body>Message</Body>
       <TextArea name="message" required></TextArea>
@@ -53,9 +54,11 @@ function Form() {
         Send
       </Button>
       {serverState.status && (
-        <p className={!serverState.status.ok ? "errorMsg" : ""}>
-          {serverState.status.msg}
-        </p>
+        <Body centered={true}>
+          {serverState.status.ok
+            ? serverState.status.msg
+            : "Sorry, there was a problem and your message wasn't sent. Please email montasherycoaching@gmail.com"}
+        </Body>
       )}
     </StyledForm>
   );

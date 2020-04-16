@@ -61,7 +61,7 @@ const theme: Theme = {
   bodyFont: {
     family: "Quicksand",
     size: "1.3em",
-    lineHeight: "1.4"
+    lineHeight: "1.8"
   },
   formInputFont: {
     family: "Quicksand",

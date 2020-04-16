@@ -7,10 +7,10 @@
     "bundle": "webpack",
     "test": "jest",
     "test:watch": "jest --watch",
-    "client": "webpack-dev-server --mode development --open --hot ",
-    "start": "npm run client",
+    "dev": "webpack-dev-server --mode development --open --hot ",
     "build": "webpack --mode production",
-    "check-types": "tsc"
+    "check-types": "tsc",
+    "start": "node src/index.tsx"
   },
   "type": "module",
   "author": "Chloe",

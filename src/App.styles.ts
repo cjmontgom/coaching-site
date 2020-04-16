@@ -3,6 +3,7 @@ import theme from "./theme";
 
 interface BodyProps {
   welcomeText?: boolean;
+  centered?: boolean;
 }
 
 interface QuotationProps {
@@ -104,7 +105,8 @@ export const SubHeader = styled.div`
 export const Body = styled.div<BodyProps>`
   margin-top: 12px; 
   ${props => (props.welcomeText ? "margin-right: 9px;" : "")}
-  
+  ${props => (props.centered ? "text-align: center;" : "")}
+
   font-family: ${theme.bodyFont.family};
   font-size: ${theme.bodyFont.size};
   font-weight: ${theme.fontWeightLight};
@@ -169,7 +171,7 @@ export const ReviewText = styled.div`
   font-style: italic;
   color: ${theme.colours.orange};
   text-align: center;
-  line-height: 1.4;
+  line-height: ${theme.bodyFont.lineHeight};
 
   @media only screen and (max-width: ${DeviceSizes.ipad}) {
     font-size: 1em;

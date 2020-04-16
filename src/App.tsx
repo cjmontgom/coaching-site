@@ -97,9 +97,9 @@ class App extends React.PureComponent {
         <Section>
           <SubHeader>NEXT STEPS</SubHeader>
           <Body>
-            Interested in exploring working with Allison? Pop your details below
-            and she will be in touch to schedule a 30 minute discovery chat to
-            see if working together might be right for you.
+            If you're interested in working with Allison, pop your details
+            below. She'll be in touch to schedule a 30 minute discovery chat,
+            and you can see if working together might be right for you.
           </Body>
         </Section>
 
