@@ -80,7 +80,7 @@ const theme: Theme = {
   },
   sizes: {
     desktop: {
-      columnWidth: "740px",
+      columnWidth: "40%",
       marginTop: "140px"
     }
   },

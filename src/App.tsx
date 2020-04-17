@@ -38,7 +38,7 @@ class App extends React.PureComponent {
             <SubHeader>WELCOME</SubHeader>
             <Body welcomeText={true}>
               Allison Tash Montgomery <br />
-              (aka Montashery) is a coach passionate about helping people find
+              (aka Montashery) is a coach who's passionate about helping people find
               freedom, joy and hope!
             </Body>
           </WelcomeText>

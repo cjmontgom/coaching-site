@@ -13,7 +13,6 @@ Repo is deployment ready using Heroku.
 - Webpack-dev-server - a little Node.js Express server, which uses the webpack-dev-middleware to serve a webpack bundle for localhost.
 - Babel - a JS transpiler that converts ES6 into ES5, which is more fully supported by browsers.
 - Prettier - to make things pretty and formatted.
-- Nodemon - to automatically restart the server when making changes to server side code.
 - Jest - paired with react-testing-library for testing rendered components.
 - Node-fetch - lightweight library for using the Fetch API in Node to make HTTP requests.
 - Formspree - deals with the server side of the form
