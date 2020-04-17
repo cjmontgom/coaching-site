@@ -149,11 +149,10 @@ export const Image = styled.img`
 
 export const ReviewWrapper = styled(Section)`
   display: flex;
-  max-width: 1060px;
+  max-width: 860px;
 
-  @media only screen and (max-width: 1260px) {
+  @media only screen and (max-width: ${DeviceSizes.laptop}) {
     flex-direction: column;
-    max-width: 90%;
   }
 `;
 

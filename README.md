@@ -40,5 +40,10 @@ https://devcenter.heroku.com/articles/git
 
 
 ####To-do
+* add newsletter sign-up section
 * make quote better on mobile optimised. (background colour? no quotations?)
-*
+* add loader circle for image and compress image size
+* make form and server files strongly typed 
+* add tests
+
+
