@@ -12,7 +12,7 @@ interface QuotationProps {
 
 const DeviceSizes = {
   phone: "600px",
-  ipad: "767px",
+  ipad: "768px",
   laptop: "1024px",
   desktop: "1200px",
   largeDesktop: "1800px"
@@ -51,6 +51,7 @@ export const Logo = styled.img`
 
 export const Header = styled.div`
   position: relative;
+  padding-left: 2%;
   z-index: 1;
 
   font-family: ${theme.headerFont.family};
@@ -59,20 +60,21 @@ export const Header = styled.div`
   color: ${theme.colours.orange};
   letter-spacing: 0.5em;
 
-  @media only screen and (max-width: ${DeviceSizes.ipad}) {
+  @media only screen and (max-width: ${DeviceSizes.laptop}) {
     font-size: 1.8em;
     letter-spacing: 0.3em;
   }
+ 
 `;
 
 export const HeaderColourBlock = styled.div`
   position: relative;
-  margin-top: -1.9em;
+  margin-top: -1.4em;
   width: 100%;
   height: ${theme.sizes.desktop.marginTop};
   background: ${theme.colours.yellow};
 
-  @media only screen and (max-width: ${DeviceSizes.ipad}) {
+  @media only screen and (max-width: ${DeviceSizes.laptop}) {
     margin-top: -0.95em;
     height: 100px;
   }
@@ -86,7 +88,7 @@ export const Section = styled.div`
   line-height: ${theme.bodyFont.lineHeight};
 
   @media only screen and (max-width: ${DeviceSizes.laptop}) {
-    margin: 4em 1em 0 1em;
+    margin: 6em 1em 0 1em;
   }
 `;
 
@@ -135,8 +137,8 @@ export const WelcomeText = styled.div`
 
 export const Image = styled.img`
   margin: 0 20px 0 20px;
-  max-width: 400px;
-  max-height: 600px;
+  max-width: 320px;
+  max-height: 480px;
   box-shadow: 12px 10px 22px -5px #ccc;
 
   @media only screen and (max-width: ${DeviceSizes.ipad}) {
@@ -183,7 +185,7 @@ export const FormWrapper = styled.div`
   flex-direction: column;
   margin: ${theme.sizes.desktop.marginTop} 0 160px 0;
   padding: 50px;
-  width: 40%;
+  width: ${theme.sizes.desktop.columnWidth};
   align-items: center;
   background: ${theme.colours.yellow};
   border-radius: ${theme.borderRadius};
@@ -196,7 +198,7 @@ export const FormWrapper = styled.div`
   @media only screen and (max-width: ${DeviceSizes.laptop}) {
     margin: 6em 0 2em 0;
     padding: 10%;
-    width: 70%;
+    width: 60%;
   }
 `;
 
@@ -204,7 +206,7 @@ export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  width: 80%;
+  width: 90%;
 
   @media only screen and (max-width: ${DeviceSizes.laptop}) {
     width: 100%;

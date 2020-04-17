@@ -50,17 +50,17 @@ export interface Theme {
 const theme: Theme = {
   headerFont: {
     family: "Montserrat",
-    size: "3.4em",
+    size: "2.6em",
     weight: "610"
   },
   subHeaderFont: {
     family: "Montserrat",
-    size: "1.5em",
+    size: "1.2em",
     letterSpacing: "0.3em"
   },
   bodyFont: {
     family: "Quicksand",
-    size: "1.3em",
+    size: "1em",
     lineHeight: "1.8"
   },
   formInputFont: {
@@ -80,7 +80,7 @@ const theme: Theme = {
   },
   sizes: {
     desktop: {
-      columnWidth: "40%",
+      columnWidth: "600px",
       marginTop: "140px"
     }
   },

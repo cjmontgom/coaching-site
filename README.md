@@ -37,3 +37,8 @@ npm run build
 ```
 Deploy app on Heroku
 https://devcenter.heroku.com/articles/git
+
+
+####To-do
+* make quote better on mobile optimised. (background colour? no quotations?)
+*
