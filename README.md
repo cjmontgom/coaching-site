@@ -1,16 +1,12 @@
-# Full Stack Boilerplate App
+# Coaching website
 
-An application with minimal packages and dependencies to use as a starter for React/ Typescript projects, with NodeJS and an Express server for the back end.
+Deployed at ****. Served by Heroku.
 
-### Development mode
+A React front end served by a simple Express server, bundled by Babel and Webpack.
+Formspree (a third party service) deals with the form submissions and sends them via email to the website owners inbox. It's as simple as an Axios HTTP post request.
+Repo is deployment ready using Heroku.
 
-In the development mode, we will have 2 servers running. The front end code will be served by the [webpack dev server](https://webpack.js.org/configuration/dev-server/) which helps with hot and live reloading. The server side Express code will be served by a node server using [nodemon](https://nodemon.io/) which helps in automatically restarting the server whenever server side code changes.
-
-### Production mode
-
-In the production mode, we will have only 1 server running. All the client side code will be bundled into static files using webpack and it will be served by the Node.js/Express application.
-
-### Packages used
+### Packages and libraries used
 
 - Webpack - a modular build tool using loaders and plugins to turn the source code into executable files.
 - Express - a web application framework for Node.js. Used to build the backend API's.
@@ -20,15 +16,16 @@ In the production mode, we will have only 1 server running. All the client side 
 - Nodemon - to automatically restart the server when making changes to server side code.
 - Jest - paired with react-testing-library for testing rendered components.
 - Node-fetch - lightweight library for using the Fetch API in Node to make HTTP requests.
+- Formspree - deals with the server side of the form
 
 #### Quickstart
 
 ```
 # Clone the repository
-git clone https://github.com/cjmontgom/react-typescript-boilerplate
+git clone https://github.com/cjmontgom/coaching-site
 
 # Go inside the directory
-cd react-typescript-boilerplate
+cd coaching-site
 
 # Install dependencies
 npm install (or yarn install)
@@ -39,13 +36,5 @@ npm run dev
 # Build for production
 npm run build
 ```
-
-#### Running tests
-
-```
-# Run tests
-npm test
-
-# Watch tests
-npm test:watch
-```
+Deploy app on Heroku
+https://devcenter.heroku.com/articles/git
