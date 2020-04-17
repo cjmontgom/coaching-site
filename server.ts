@@ -14,11 +14,11 @@ const mockResponse = {
 app.use(express.static(DIST_DIR));
 
 // a route to test the server is running properly
-app.get('/api', (_req: any, res: any) => {
+app.get('/api', (req: any, res: any) => {
     res.send(mockResponse);
 });
 
-app.get('*', (_req: any, res: any) => {
+app.get('*', (req: any, res: any) => {
     res.sendFile(HTML_FILE);
 });
 
