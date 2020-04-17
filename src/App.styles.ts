@@ -261,7 +261,7 @@ export const Button = styled.button`
 
   font-family: ${theme.bodyFont.family};
   font-weight: ${theme.fontWeightReallyBold};
-  font-size: 1.5em;
+  font-size: 1.1em;
   color: black;
 
   &:hover {
