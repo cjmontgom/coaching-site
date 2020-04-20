@@ -21,6 +21,7 @@ import allison from "./images/allison.png";
 import quotationLeft from "./images/quotationLeft.png";
 import quotationRight from "./images/quotationRight.png";
 import Form from "./Form";
+import NewsletterSignup from "../Newsletter";
 
 class App extends React.PureComponent {
   render() {
@@ -107,6 +108,8 @@ class App extends React.PureComponent {
           <SubHeader>GET IN TOUCH</SubHeader>
           <Form />
         </FormWrapper>
+
+        <NewsletterSignup/>
       </Wrapper>
     );
   }
