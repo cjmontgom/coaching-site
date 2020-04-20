@@ -1,6 +1,6 @@
 # Coaching website
 
-Deployed at ****. Served by Heroku.
+Deployed at www.montasherycoaching.com. Served by Heroku.
 
 A React front end served by a simple Express server, bundled by Babel and Webpack.
 Formspree (a third party service) deals with the form submissions and sends them via email to the website owners inbox. It's as simple as an Axios HTTP post request.
@@ -41,6 +41,8 @@ https://devcenter.heroku.com/articles/git
 
 ####To-do
 * add newsletter sign-up section
+* get rid of shadows
+* add A-NAME montasherycoaching.com
 * make quote better on mobile optimised. (background colour? no quotations?)
 * add loader circle for image and compress image size
 * make form and server files strongly typed 
