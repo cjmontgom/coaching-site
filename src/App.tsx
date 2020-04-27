@@ -109,7 +109,7 @@ class App extends React.PureComponent {
           <Form />
         </FormWrapper>
 
-        <NewsletterSignup/>
+        {/*<NewsletterSignup/>*/}
       </Wrapper>
     );
   }
