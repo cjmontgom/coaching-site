@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Body, Button, StyledForm, TextArea, TextInput } from "./App.styles";
+import { Body, Button, StyledForm, TextArea, TextInput } from "./styles/App.styles";
 
 // add types
 

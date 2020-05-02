@@ -39,8 +39,8 @@ const mailchimpApiKey = "90f558876113ebf9af929f702156068d-us19";
 
 
 app.post('/signup', function (req, res) {
-    console.log("IN HERE");
-    console.log("request body " + JSON.stringify(req.body));
+    console.log('in the server');
+    console.log("request body in server " + req.body.email);
     //request body {"EMAIL":"email@evmail.com","subscribe":""}
     axios({
         method: "post",
@@ -56,12 +56,12 @@ app.post('/signup', function (req, res) {
     })
         .then(r => {
             res.status(200);
-            console.log("Success! Your message has been sent.", r);
+            res.send("Success! Your message has been sent.", r);
         })
         .catch(r => {
             console.log(r.response.data.error);
+            res.send('error')
         });
-
 });
 
 app.listen(port, function () {

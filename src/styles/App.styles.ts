@@ -139,7 +139,6 @@ export const Image = styled.img`
   margin: 0 20px 0 20px;
   max-width: 320px;
   max-height: 480px;
-  box-shadow: 12px 10px 22px -5px #ccc;
 
   @media only screen and (max-width: ${DeviceSizes.ipad}) {
     margin-top: 20px;
@@ -256,7 +255,6 @@ export const Button = styled.button`
   width: 100px;
   border: none;
   border-radius: 25px;
-  box-shadow: 8px 8px 16px -12px;
   background: white;
 
   font-family: ${theme.bodyFont.family};

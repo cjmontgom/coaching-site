@@ -15,7 +15,7 @@ import {
   WelcomeSection,
   WelcomeText,
   Wrapper
-} from "./App.styles";
+} from "./styles/App.styles";
 import logo from "./images/logo.png";
 import allison from "./images/allison.png";
 import quotationLeft from "./images/quotationLeft.png";
