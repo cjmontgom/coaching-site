@@ -33,6 +33,10 @@ app.get('/.well-known/acme-challenge/Zv-X5B1JpMtLqVy7oyNYcATn6AiWBJ7C9gZSn_Ux6-Q
     res.send('Zv-X5B1JpMtLqVy7oyNYcATn6AiWBJ7C9gZSn_Ux6-Q.ix-DtphCiBwB_Q1FfXUCdHxEgneG2tq8qHwNVLCP9nA')
 })
 
+app.get('/.well-known/acme-challenge/L3pX3ynRnEdh9TwDHGScuUjeDjlDqwvHZoniqonYS8Q', function(req, res) {
+    res.send('L3pX3ynRnEdh9TwDHGScuUjeDjlDqwvHZoniqonYS8Q.ix-DtphCiBwB_Q1FfXUCdHxEgneG2tq8qHwNVLCP9nA')
+})
+
 app.get('*', (req, res) => {
     res.sendFile(HTML_FILE);
 });
