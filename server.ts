@@ -29,6 +29,10 @@ app.get('/api', (req, res) => {
     res.send(mockResponse);
 });
 
+app.get('/.well-known/acme-challenge/Zv-X5B1JpMtLqVy7oyNYcATn6AiWBJ7C9gZSn_Ux6-Q', function(req, res) {
+    res.send('Zv-X5B1JpMtLqVy7oyNYcATn6AiWBJ7C9gZSn_Ux6-Q.ix-DtphCiBwB_Q1FfXUCdHxEgneG2tq8qHwNVLCP9nA')
+})
+
 app.get('*', (req, res) => {
     res.sendFile(HTML_FILE);
 });

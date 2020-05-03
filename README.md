@@ -43,7 +43,6 @@ https://devcenter.heroku.com/articles/git
 * sort newsletter sign-up section call to server
 * style newsletter sign-up section
 * add SSL certificate https://devcenter.heroku.com/articles/ssl
-* add A-NAME montasherycoaching.com https://medium.com/@ethanryan/setting-up-a-custom-domain-for-your-heroku-hosted-app-6c011e75aa3d
 * make quote better on mobile optimised. (background colour? no quotations?)
 * add loader circle for image
 * make form/ signup and server files strongly typed 
