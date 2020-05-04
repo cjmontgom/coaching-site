@@ -40,12 +40,15 @@ https://devcenter.heroku.com/articles/git
 
 
 ####To-do
+* put necessary fonts in html link tag instead of install all .woffs
+* make form component better and strongly typed
+* make server object oriented and split out routes/ controllers
 * sort newsletter sign-up section call to server
 * style newsletter sign-up section
-* add SSL certificate https://devcenter.heroku.com/articles/ssl
 * make quote better on mobile optimised. (background colour? no quotations?)
 * add loader circle for image
 * make form/ signup and server files strongly typed 
 * add tests
+* move device sizes from types file into theme.ts
 
 
