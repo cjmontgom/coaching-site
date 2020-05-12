@@ -1,6 +1,13 @@
 import React from "react";
-import {Body, BodyWrapper, SubHeader} from "../styles/main.styles";
-import {BlogImage, BlogParagraph, BlogSection, Citation, PageBreak, Quote} from "../styles/blog.styles";
+import { Body, BodyWrapper, SubHeader } from "../styles/main.styles";
+import {
+  BlogImage,
+  BlogParagraph,
+  BlogSection,
+  Citation,
+  PageBreak,
+  Quote
+} from "../styles/blog.styles";
 import church from "../images/church.png";
 import Form from "./home/form";
 
@@ -85,11 +92,10 @@ const Blog = () => (
           status quo and has perpetuated male-dominated structures of power and
           authority. However, despite these powerful forces working against
           women, they have been subverting such institutions throughout the
-          ages, and creating spaces in which to speak, teach and lead. Christian
-          women who have forged alternative spaces, is a classification in which
-          I could be included. It was my own experience of navigating my
-          femaleness within many different Christian spaces that made me so
-          curious about studying all of this in more depth.
+          ages, and creating spaces in which to speak, teach and lead. It was my
+          own experience of navigating my femaleness within many different
+          Christian spaces that made me so curious about studying all of this in
+          more depth.
         </BlogParagraph>
         <BlogParagraph>
           The main argument running throughout Harrison Warren’s article is her
