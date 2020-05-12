@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import theme from "../theme";
-import {DeviceSizes} from "../types";
+import { DeviceSizes } from "../types";
 
 export const FormWrapper = styled.div`
+  align-self: center;
+
   display: flex;
   flex-direction: column;
-  margin: ${theme.sizes.desktop.marginTop} 0 160px 0;
-  padding: 50px;
-  width: ${theme.sizes.desktop.columnWidth};
+  margin: 6em 0 2em 0;
+  padding: 10%;
+  width: 70%;
   align-items: center;
   background: ${theme.colours.yellow};
   border-radius: ${theme.borderRadius};
@@ -17,10 +19,16 @@ export const FormWrapper = styled.div`
     transition: box-shadow 0.2s ease-in-out;
   }
 
-  @media only screen and (max-width: ${DeviceSizes.laptop}) {
+  @media only screen and (min-width: ${DeviceSizes.ipad}) {
     margin: 6em 0 2em 0;
     padding: 10%;
     width: 60%;
+  }
+
+  @media only screen and (min-width: ${DeviceSizes.ipad}) {
+    margin: ${theme.sizes.desktop.marginTop} 0 160px 0;
+    padding: 50px;
+    width: ${theme.sizes.desktop.columnWidth};
   }
 `;
 

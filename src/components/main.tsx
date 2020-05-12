@@ -3,24 +3,22 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {Wrapper} from "../styles/main.styles";
 import Blog from "./blog";
 import Home from "./home";
-import Menu from "./menu";
-import Header from './header'
+import TopBar from "./topbar";
+import MobileTopBar from "./mobileTopbar";
 
 const Main = () => (
   <Wrapper>
     <Router>
-      <Header/>
-      {/*<Menu/>*/}
-      {/*<Switch>*/}
-      {/*  <Route path="/blog">*/}
-      {/*    <div>here</div>*/}
-      {/*    <Blog />*/}
-      {/*  </Route>*/}
-      {/*  <Route path="/">*/}
-      {/*    <Home/>*/}
-      {/*  </Route>*/}
-      {/*</Switch>*/}
-      <Home/>
+      <TopBar/>
+      <MobileTopBar/>
+      <Switch>
+        <Route path="/blog">
+          <Blog />
+        </Route>
+        <Route path="/">
+          <Home/>
+        </Route>
+      </Switch>
     </Router>
   </Wrapper>
 );

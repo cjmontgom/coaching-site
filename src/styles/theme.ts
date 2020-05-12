@@ -50,7 +50,7 @@ export interface Theme {
 const theme: Theme = {
   headerFont: {
     family: "Montserrat",
-    size: "2.6em",
+    size: "1.8em",
     weight: "610"
   },
   subHeaderFont: {

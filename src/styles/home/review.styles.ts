@@ -10,9 +10,10 @@ interface QuotationProps {
 export const ReviewWrapper = styled(Section)`
   display: flex;
   max-width: 860px;
+  flex-direction: column;
 
-  @media only screen and (max-width: ${DeviceSizes.laptop}) {
-    flex-direction: column;
+  @media only screen and (min-width: ${DeviceSizes.laptop}) {
+    flex-direction: row;
   }
 `;
 
@@ -35,6 +36,6 @@ export const ReviewText = styled.div`
   line-height: ${theme.bodyFont.lineHeight};
 
   @media only screen and (max-width: ${DeviceSizes.ipad}) {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 `;
