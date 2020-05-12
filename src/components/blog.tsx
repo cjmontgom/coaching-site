@@ -14,7 +14,7 @@ const Blog = () => (
       <BlogImage src={church} alt="An illustration of a church building." />
       <Body>
         <div>
-          by Allison Tash Montgomery <br /> 9th May 2020
+          by Allison Tash Montgomery <br /> 12th May 2020
         </div>
       </Body>
       <Body>

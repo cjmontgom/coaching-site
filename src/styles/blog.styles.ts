@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import {Body, Section} from "./main.styles";
-import {DeviceSizes} from "./types";
+import { Body, Section } from "./main.styles";
+import { DeviceSizes } from "./types";
 
 export const BlogImage = styled.img`
   margin-top: 40px;
@@ -16,6 +16,7 @@ export const BlogImage = styled.img`
 
 export const BlogParagraph = styled.div`
   margin-top: 50px;
+  text-align: left;
 `;
 
 export const Citation = styled(Body)`
@@ -38,7 +39,7 @@ export const BlogSection = styled(Section)`
   @media only screen and (min-width: ${DeviceSizes.ipad}) {
     max-width: 600px;
   }
-  
+
   @media only screen and (min-width: ${DeviceSizes.laptop}) {
     max-width: 700px;
   }
