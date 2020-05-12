@@ -20,10 +20,15 @@ const TopBar = () => {
     distanceFromTop <= -260 ? setIsFixed(true) : setIsFixed(false);
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+  const handleResize = () => {
     const width = topBarWrapper.current.parentElement.getBoundingClientRect().width;
     setParentWidth(width);
+  }
+
+  useEffect(() => {
+    handleResize()
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('resize', handleResize)
   }, []);
 
   return (

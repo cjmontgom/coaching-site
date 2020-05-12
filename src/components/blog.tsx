@@ -182,8 +182,7 @@ const Blog = () => (
         <BlogParagraph>
           I am really excited to explore these topics and so many more— I’m
           reworking other essays as well, including one all about ‘queering
-          Christian family values’— so buckle up as we explore these ideas and
-          tear down the patriarchy!
+          Christian family values’— so get ready!
         </BlogParagraph>
         <PageBreak />
 

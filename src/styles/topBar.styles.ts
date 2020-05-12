@@ -95,9 +95,9 @@ export const Heading = styled.div`
     font-size: 1.3em;
     letter-spacing: 0.4em;
     flex: 4;
-  }
-
-  @media only screen and (min-width: ${DeviceSizes.laptop}) {
+  }  
+  
+  @media only screen and (min-width: 1122px) {
     font-size: ${theme.headerFont.size};
     letter-spacing: 0.5em;
     flex: 3;
