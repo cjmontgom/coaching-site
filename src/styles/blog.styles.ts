@@ -26,7 +26,6 @@ export const Citation = styled(Body)`
 export const Quote = styled.div`
   margin: 12px 0 12px 0;
   font-style: italic;
-  font-weight: 500;
 `;
 
 export const PageBreak = styled.hr`
