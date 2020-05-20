@@ -252,7 +252,7 @@ const PurityBlogPost = () => (
         the consumption of men and not for the pleasure of women (I mean, let’s
         talk about the clitoris. It’s the only biological component on any human
         body with the primary purpose of pleasure. Some scientists argue
-        pleasure is its ONLY function... just let that sink in). We need to put
+        pleasure it's its ONLY function... just let that sink in). We need to put
         a stop to prohibition as an answer to excess, and instead form a nuanced
         and deep understanding of sex and intimacy. As humans we tend to
         compulsively segment life into a series of opposing binaries; especially
