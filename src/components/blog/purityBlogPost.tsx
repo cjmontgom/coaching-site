@@ -64,7 +64,7 @@ const PurityBlogPost = () => (
         <BlogParagraph>
           Both men and women are expected to remain sexually “pure” until
           marriage. This includes abstaining from sex, but it also extends to
-          avoiding lustful thoughts and not masterbating. Men and boys, however,
+          avoiding lustful thoughts and not masturbating. Men and boys, however,
           who are seen as sexually depraved (whereas women and girls are seen as
           naturally non-sexual) are generally given far more sexual leeway
           before marriage. For young women, being “pure” also means being
