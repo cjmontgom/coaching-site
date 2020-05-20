@@ -1,6 +1,7 @@
 import React from "react";
 import {Body, Header} from "../../styles/main.styles";
 import {
+    BlogBody,
     BlogImage,
     BlogParagraph,
     BlogWrapper,
@@ -25,7 +26,7 @@ const AuthorityBlogPost = () => (
         </div>
       </Body>
     </HeaderStuff>
-    <Body>
+    <BlogBody>
       <BlogParagraph>
         In August of 2018, as I was submitting my dissertation for my Masters in
         Gender Studies, I knew I didn’t want the ideas I was exploring to exist
@@ -194,7 +195,7 @@ const AuthorityBlogPost = () => (
         Any questions or comments? Want to dive deeper exploring these topics
         and how they relate uniquely to your life? Contact me below.
       </BlogParagraph>
-    </Body>
+    </BlogBody>
   </BlogWrapper>
 );
 

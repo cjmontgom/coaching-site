@@ -19,7 +19,7 @@ const BlogContents = () => {
                         <SmallerBlogImage src={vcard} alt="A card saying 'v card'" />
                         <Header>PURITY CULTURE</Header>
                         <Body>
-                            <i>jsada oijsf jjfsajndf ihsfdn kmm</i>
+                            <i>What is it and how does it affect us</i>
                         </Body>
                     </BlogCard>
                     <BlogCard to={`${url}/by-whos-authority`}>

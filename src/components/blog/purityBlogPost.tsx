@@ -1,6 +1,7 @@
 import React from "react";
 import { Body, Header } from "../../styles/main.styles";
 import {
+  BlogBody,
   BlogImage,
   BlogParagraph,
   BlogWrapper,
@@ -16,16 +17,16 @@ const PurityBlogPost = () => (
     <HeaderStuff>
       <Header>PURITY CULTURE</Header>
       <Body>
-        <i>Gender, Power, and the Female Christian Blogger</i>
+        <i>What is it and how does it affect us</i>
       </Body>
       <BlogImage src={vcard} alt="A card saying 'v card'" />
       <Body>
         <div>
-          by Allison Tash Montgomery <br /> 12th May 2020
+          by Allison Tash Montgomery <br /> 20th May 2020
         </div>
       </Body>
     </HeaderStuff>
-    <Body>
+    <BlogBody>
       <BlogParagraph>
         I was definitely not surprised when, on Instagram, I asked what subjects
         and topics related to gender, sexuality, and spirituality people would
@@ -70,13 +71,10 @@ const PurityBlogPost = () => (
           responsible for the boys and men around them and behaving in ways that
           do not “tempt” others to sin. Jessica Valenti, in her book,{" "}
           <i>The Purity Myth</i>, explains the messaging plainly, we’re told,
-          <Quote>
-            “Boys want sex and they'll do anything to get it and girls own sex
-            and have to keep it.”
-          </Quote>{" "}
-          Then, once you get married, you are expected to flip a switch and
-          totally turn on your sexuality, resulting in a beautiful, easy and
-          blessed sex life with your spouse.
+          “Boys want sex and they'll do anything to get it and girls own sex and
+          have to keep it.” Then, once you get married, you are expected to flip
+          a switch and totally turn on your sexuality, resulting in a beautiful,
+          easy and blessed sex life with your spouse.
         </BlogParagraph>
         <BlogParagraph>
           Additionally, purity culture tells a story that a girl's virginity is
@@ -113,7 +111,7 @@ const PurityBlogPost = () => (
       <BlogParagraph>
         I read a book called ‘I Kissed Dating Goodbye” and signed a pledge that
         said “True Love Waits”. (If you read this book too, you might be
-        interested in Joshua Harris’
+        interested in Joshua Harris’{" "}
         <a href="https://www.youtube.com/watch?v=D2kV4ngi7J4" target="_blank">
           TedX talk
         </a>{" "}
@@ -244,11 +242,8 @@ const PurityBlogPost = () => (
         reformation” as “seeing ourselves more fully”, and invites us to “forge
         a new Christian sexual ethic-- one based not on a standardised list of
         <i>thou shall nots</i>, but on concern for each others flourishing.”
-        Matthais Roberts, in his book <i>Beyond Shame</i>, says,
-        <Quote>
-          “If it doesn’t feel healthy, if it doesn’t produce positive,
+        Matthais Roberts, in his book <i>Beyond Shame</i>, says, “if it doesn’t feel healthy, if it doesn’t produce positive,
           enjoyable, life-giving results, it’s not sexual health.”
-        </Quote>
       </BlogParagraph>
       <BlogParagraph>
         To do that, we must dismantle the pillars that purity culture is built
@@ -324,7 +319,7 @@ const PurityBlogPost = () => (
         Any questions or comments? Want to dive deeper exploring these topics
         and how they relate uniquely to your life? Contact me below.
       </BlogParagraph>
-    </Body>
+    </BlogBody>
   </BlogWrapper>
 );
 

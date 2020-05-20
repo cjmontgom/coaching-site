@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import {Body} from "../main.styles";
-import {DeviceSizes} from "../types";
+import { Body } from "../main.styles";
+import { DeviceSizes } from "../types";
 import theme from "../theme";
 
 export const HeaderStuff = styled.div`
@@ -42,13 +42,16 @@ export const SmallerBlogImage = styled(BlogImage)`
 }
 `;
 
+export const BlogBody = styled(Body)`
+  margin-top: 60px;
+`;
+
 export const BlogParagraph = styled.div`
-  margin-top: 50px;
+  margin: 25px 0;
   text-align: left;
 `;
 
 export const SubHeader = styled.div`
-  padding-top: 70px;
   font-weight: ${theme.fontWeightReallyBold};
 `;
 
