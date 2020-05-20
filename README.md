@@ -40,6 +40,13 @@ https://devcenter.heroku.com/articles/git
 
 
 ####To-do
+make quick router work for second blog post with nested routing
+make working cards for blog posts on contents page
+decide on how urls will be with blogs. number? title?
+have json blog posts and create them through passing in props to blog component
+
+move Form from every blog to main blog content render
+
 * put necessary fonts in html link tag instead of install all .woffs
 * make form component better and strongly typed
 * make server object oriented and split out routes/ controllers
@@ -50,5 +57,7 @@ https://devcenter.heroku.com/articles/git
 * make form/ signup and server files strongly typed 
 * add tests
 * move device sizes from types file into theme.ts
+
+* save blog posts in a db and access through a backend on loading the blog
 
 

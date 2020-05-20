@@ -9,7 +9,7 @@ import {
   Body,
   BodyWrapper,
   Section,
-  SubHeader
+  Header
 } from "../../styles/main.styles";
 import allison from "../../images/allison.png";
 import logo from "../../images/logo.png";
@@ -24,7 +24,7 @@ class Home extends React.PureComponent {
         <BodyWrapper>
           <WelcomeSection>
             <WelcomeText>
-              <SubHeader>WELCOME</SubHeader>
+              <Header>WELCOME</Header>
               <Body welcomeText={true}>
                 Allison Tash Montgomery <br />
                 (aka Montashery) is a coach who's passionate about helping
@@ -38,7 +38,7 @@ class Home extends React.PureComponent {
           </WelcomeSection>
 
           <Section>
-            <SubHeader>ABOUT</SubHeader>
+            <Header>ABOUT</Header>
             <Body>
               As a coach, Allison is committed to journeying alongside people as
               they discover more of who they are and how they can step into a
@@ -52,21 +52,21 @@ class Home extends React.PureComponent {
           </Section>
 
           <Section>
-            <SubHeader>WORKING WITH ALLISON</SubHeader>
+            <Header>WORKING WITH ALLISON</Header>
             <Body>
               Allison offers both in-person coaching sessions in Spitalfields,
               London and online via phone or zoom. International clients are
               very much welcome.
               <br />
-              Pricing operates on a sliding scale based on what the client can
-              afford.
+              <strong>Pricing operates on a sliding scale based on what the client can
+                afford.</strong>
             </Body>
           </Section>
 
           <Review />
 
           <Section>
-            <SubHeader>NEXT STEPS</SubHeader>
+            <Header>NEXT STEPS</Header>
             <Body>
               If you're interested in working with Allison, pop your details
               below. She'll be in touch to schedule a 30 minute discovery chat,

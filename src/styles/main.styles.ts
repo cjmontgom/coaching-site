@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DeviceSizes } from "./types";
+import {DeviceSizes} from "./types";
 import theme from "./theme";
 
 interface BodyProps {
@@ -38,7 +38,8 @@ export const Section = styled.div`
   }
 `;
 
-export const SubHeader = styled.div`
+export const Header = styled.div`
+  margin-top: 10px;
   font-family: ${theme.subHeaderFont.family};
   font-size: ${theme.subHeaderFont.size};
   font-weight: ${theme.fontWeightBold};

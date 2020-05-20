@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
 import {Button, FormWrapper, StyledForm, TextArea, TextInput} from "../../styles/home/form.styles";
-import {Body, SubHeader} from "../../styles/main.styles";
+import {Body, Header} from "../../styles/main.styles";
 
 function Form() {
   const [serverState, setServerState] = useState({
@@ -40,7 +40,7 @@ function Form() {
 
   return (
     <FormWrapper>
-      <SubHeader>GET IN TOUCH</SubHeader>
+      <Header>GET IN TOUCH</Header>
 
       <StyledForm onSubmit={handleOnSubmit}>
         <Body>Name</Body>
