@@ -1,7 +1,13 @@
 import styled from "styled-components";
-import { Body } from "../main.styles";
-import { DeviceSizes } from "../types";
+import {Body} from "../main.styles";
+import {DeviceSizes} from "../types";
 import theme from "../theme";
+
+export const HeaderStuff = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+`;
 
 export const BlogWrapper = styled.div`
   max-width: 350px;

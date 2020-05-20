@@ -1,20 +1,30 @@
 import React from "react";
-import {Body, Header} from "../../styles/main.styles";
-import {BlogImage, BlogParagraph, BlogWrapper, PageBreak, Quote, SubHeader} from "../../styles/blog/blog.styles";
+import { Body, Header } from "../../styles/main.styles";
+import {
+  BlogImage,
+  BlogParagraph,
+  BlogWrapper,
+  HeaderStuff,
+  PageBreak,
+  Quote,
+  SubHeader
+} from "../../styles/blog/blog.styles";
 import vcard from "../../images/v-card.png";
 
 const PurityBlogPost = () => (
   <BlogWrapper>
-    <Header>PURITY CULTURE</Header>
-    <Body>
-      <i>Gender, Power, and the Female Christian Blogger</i>
-    </Body>
-    <BlogImage src={vcard} alt="A card saying 'v card'" />
-    <Body>
-      <div>
-        by Allison Tash Montgomery <br /> 12th May 2020
-      </div>
-    </Body>
+    <HeaderStuff>
+      <Header>PURITY CULTURE</Header>
+      <Body>
+        <i>Gender, Power, and the Female Christian Blogger</i>
+      </Body>
+      <BlogImage src={vcard} alt="A card saying 'v card'" />
+      <Body>
+        <div>
+          by Allison Tash Montgomery <br /> 12th May 2020
+        </div>
+      </Body>
+    </HeaderStuff>
     <Body>
       <BlogParagraph>
         I was definitely not surprised when, on Instagram, I asked what subjects
